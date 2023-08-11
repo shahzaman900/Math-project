@@ -26,6 +26,11 @@ function Calculator() {
         <button>3</button>
         <button>+</button>
       </div>
+      <div className='row'>
+        <button className='zero'>0</button>
+        <button>.</button>
+        <button>=</button>
+      </div>
     </div>
   );
 }

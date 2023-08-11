@@ -63,3 +63,7 @@ button:hover {
   border: 1px solid gainsboro;
   background-color: transparent;
 }
+
+.zero {
+  flex: 2;
+}

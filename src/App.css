@@ -1,3 +1,63 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
-  text-align: center;
+  width: 12rem;
+  padding: 2rem;
+  border: 1px solid gainsboro;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: aliceblue;
+  border: 1px solid gainsboro;
+  flex: 1;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: whitesmoke;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 0.3rem;
+}
+
+.display {
+  padding: 1rem;
+  justify-content: end;
+  cursor: pointer;
+  display: flex;
+  background-color: aliceblue;
 }

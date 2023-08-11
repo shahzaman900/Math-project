@@ -57,7 +57,9 @@ button:hover {
 .display {
   padding: 1rem;
   justify-content: end;
+  border-radius: 0.2rem;
   cursor: pointer;
   display: flex;
-  background-color: aliceblue;
+  border: 1px solid gainsboro;
+  background-color: transparent;
 }

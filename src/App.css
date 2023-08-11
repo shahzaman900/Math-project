@@ -18,7 +18,6 @@ body {
 
 .App {
   width: 12rem;
-  padding: 2rem;
   border: 1px solid gainsboro;
   border-radius: 0.5rem;
   display: flex;
@@ -30,7 +29,6 @@ body {
   width: inherit;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
 }
 
 button {
@@ -51,7 +49,6 @@ button:hover {
   align-items: center;
   justify-content: center;
   flex: 1;
-  gap: 0.3rem;
 }
 
 .display {

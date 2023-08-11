@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import './App.css';
 import Calculator from './components/calculator';
 

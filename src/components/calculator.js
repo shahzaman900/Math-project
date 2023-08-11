@@ -20,7 +20,7 @@ function Calculator() {
         <button onClick={ getButtonValue }>AC</button>
         <button onClick={ getButtonValue }>+/-</button>
         <button onClick={ getButtonValue }>%</button>
-        <button className='yellow' onClick={ getButtonValue }>/</button>
+        <button className='yellow' onClick={ getButtonValue }>÷</button>
       </div>
       <div className='row'>
         <button onClick={ getButtonValue }>7</button>

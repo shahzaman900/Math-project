@@ -36,7 +36,7 @@ body {
 button {
   padding: 0.5rem;
   border-radius: 0.2rem;
-  background-color: aliceblue;
+  background-color: transparent;
   border: 1px solid gainsboro;
   flex: 1;
   cursor: pointer;

@@ -10,7 +10,7 @@ function Quote() {
 
     const fetchQuote = async () => {
       try {
-        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=happiness', {
+        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=uasiduia', {
           headers: {
             'X-Api-Key': 'WhmitRBUHv9LAjdRrvVfVw==QaSq4YojxGQkm1X6',
           },
@@ -22,7 +22,11 @@ function Quote() {
 
         const fetchedQuote = await response.json();
         setLoading(false);
-        setQuote(fetchedQuote[0].quote);
+        if (fetchedQuote && fetchedQuote[0]) {
+          setQuote(fetchedQuote[0].quote);
+        } else {
+          setQuote(true);
+        }
       } catch (e) {
         setError(true);
         setLoading(false);

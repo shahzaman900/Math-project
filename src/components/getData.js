@@ -1,34 +1,50 @@
 import { useState, useEffect } from 'react';
 
 function Quote() {
-  const [quote, setQuote] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [quote, setQuote] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
+    let isMounted = true;
+
     const fetchQuote = async () => {
-      const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=happiness', {
-        headers: {
-          'X-Api-Key': 'WhmitRBUHv9LAjdRrvVfVw==QaSq4YojxGQkm1X6',
-        },
-      });
-      const fetchedQuote = await response.json();
-      setLoading(true);
-      setQuote(fetchedQuote[0].quote);
+      try {
+        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=happiness', {
+          headers: {
+            'X-Api-Key': 'WhmitRBUHv9LAjdRrvVfVw==QaSq4YojxGQkm1X6',
+          },
+        });
+
+        if (!isMounted) {
+          return;
+        }
+
+        const fetchedQuote = await response.json();
+        setLoading(false);
+        setQuote(fetchedQuote[0].quote);
+      } catch (e) {
+        setError(true);
+        setLoading(false);
+      }
     };
 
     fetchQuote();
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
-  if (loading === false) {
-    return (
-      <h1>loading</h1>
-    );
+  if (error) {
+    return <h1>Something went wrong</h1>;
   }
-  return (
-      <div>
-        {quote}
-      </div>
-  );
+
+  if (loading) {
+    return <h1>Loading</h1>;
+  }
+
+  return <div>{quote}</div>;
 }
 
 export default Quote;

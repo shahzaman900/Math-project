@@ -1,11 +1,8 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
 import Quote from '../getData';
 
-describe('Quote', () => {
-  test('renders correctly', () => {
-    const component = renderer.create(<Quote />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+test('renders learn react link', () => {
+  render(<Quote />);
+  const linkElement = screen.getByText(/AC/i);
+  expect(linkElement).toBeInTheDocument();
 });

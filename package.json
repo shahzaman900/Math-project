@@ -20,7 +20,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
+      "wesbos",
       "react-app/jest"
     ]
   },
@@ -39,17 +39,27 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/eslint-parser": "^7.22.10",
+    "@babel/plugin-syntax-jsx": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
     "@testing-library/react": "^14.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-wesbos": "^3.2.3",
     "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "hint": "^7.1.10",
+    "prettier": "^2.7.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint-scss": "^3.21.0",
+    "typescript": "^4.8.4"
   },
   "keywords": [],
   "author": "",

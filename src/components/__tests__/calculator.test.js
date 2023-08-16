@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Calculator from '../calculator';
 
-test('renders learn react link', () => {
+test('Testing Calculator component', () => {
   render(<Calculator />);
   const linkElement = screen.getByText(/AC/i);
   expect(linkElement).toBeInTheDocument();

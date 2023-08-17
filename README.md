@@ -62,7 +62,7 @@
 <details>
   <summary>React</summary>
   <ul>
-    <li><a href="https://www.w3schools.com/css/default.asp">javaScript</a></li>
+    <li><a href="https://react.dev/">javaScript</a></li>
   </ul>
 </details>
 

@@ -19,7 +19,6 @@ function Quote() {
         if (!isMounted) {
           return;
         }
-
         const fetchedQuote = await response.json();
         setLoading(false);
         if (fetchedQuote && fetchedQuote[0]) {

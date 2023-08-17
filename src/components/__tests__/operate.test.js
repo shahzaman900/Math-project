@@ -20,4 +20,19 @@ describe('operate', () => {
     const result = operate(10, 2, '÷');
     expect(result).toBe('5');
   });
+
+  test('modulus of two numbers correctly', () => {
+    const result = operate(36, 4, '%');
+    expect(result).toBe('0');
+  });
+
+  test('modulo of a number by zero', () => {
+    const result = operate(10, 0, '%');
+    expect(result).toBe("Can't find modulo as can't divide by 0.");
+  });
+
+  test('divide a number by zero', () => {
+    const result = operate(10, 0, '÷');
+    expect(result).toBe("Can't divide by 0.");
+  });
 });

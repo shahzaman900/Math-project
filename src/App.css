@@ -4,6 +4,7 @@ body {
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,12 +14,12 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5rem;
 }
 
 .App {
-  width: 12rem;
-  border: 1px solid gainsboro;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -28,9 +29,10 @@ body {
 }
 
 .calculator {
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 0.3rem;
 }
 
 button {
@@ -51,6 +53,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   flex: 1;
+  gap: 0.3rem;
 }
 
 .display {
@@ -70,4 +73,26 @@ button:hover {
 
 .yellow {
   background-color: #f39148;
+}
+
+.nav {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }

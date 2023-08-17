@@ -1,5 +1,13 @@
 export default function Home() {
   return (
-    <h1>welcome to home page</h1>
+    <>
+      <div>
+        <h1>welcome to our page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorum, repellendus</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorum, repellendus</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorum, repellendus</p>
+      </div>
+
+    </>
   );
 }

@@ -1,5 +1,7 @@
-export default function Home() {
+import Quotee from '../components/getData';
+
+export default function Quote() {
   return (
-    <h1>welcome to home page</h1>
+    <Quotee />
   );
 }

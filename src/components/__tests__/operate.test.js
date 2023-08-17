@@ -32,7 +32,7 @@ describe('operate', () => {
   });
 
   test('divide a number by zero', () => {
-    const result = operate(10, 0, '÷');
+    const result = operate(20, 0, '÷');
     expect(result).toBe("Can't divide by 0.");
   });
 });
